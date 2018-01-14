@@ -25,6 +25,6 @@
     font-family: Roadway;
     font-variant: small-caps;
 }
-.quotebtn:focus {
+.btn:focus {
 	outline:0 !important;
 }

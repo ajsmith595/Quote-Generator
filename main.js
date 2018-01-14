@@ -16,6 +16,14 @@ $(document).ready(function(){
         if(quote.author != undefined && quote.quote != undefined){
             $('#author').html("- " + quote.author.toUpperCase());
             $('#actualQuote').html("\"" + quote.quote.toUpperCase() + "\"");
+            $('.tweetbtn').attr('onclick', "openInNewTab('https://twitter.com/intent/tweet?text=" + escape("\"" + quote.quote+ "\"" + " - " + quote.author) +"');");
         }
     });
+
 })
+
+
+function openInNewTab(url){
+    var win = window.open(url, '_blank');
+    win.focus();
+}
