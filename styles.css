@@ -1,0 +1,30 @@
+@font-face{
+	font-family: Roadway;
+	src: url("ROADWAY_.ttf");
+}
+
+
+.jumbotron h1, .jumbotron h2{
+    font-family: Roadway;
+
+}
+
+.jumbotron h3{
+    font-family: Roadway;
+    font-variant: small-caps;
+
+}
+
+.jumbotron h3 a{
+    text-decoration: none;
+}
+
+.quotebtn{
+    font-size: 200%;
+    transition: background-color .1s linear;
+    font-family: Roadway;
+    font-variant: small-caps;
+}
+.quotebtn:focus {
+	outline:0 !important;
+}
