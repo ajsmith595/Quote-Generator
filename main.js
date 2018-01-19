@@ -18,6 +18,7 @@ $(document).ready(function(){
             $('#actualQuote').html("\"" + quote.quote.toUpperCase() + "\"");
             $('.tweetbtn').attr('onclick', "openInNewTab('https://twitter.com/intent/tweet?text=" + escape("\"" + quote.quote+ "\"" + " - " + quote.author) +"');");
         }
+        $(this).blur();
     });
 
 })
@@ -26,4 +27,5 @@ $(document).ready(function(){
 function openInNewTab(url){
     var win = window.open(url, '_blank');
     win.focus();
+    $('.tweetbtn').blur();
 }
